@@ -1,0 +1,15 @@
+{
+    "workbench.colorCustomizations": {},
+    "files.associations": {
+        "Jenkinsfile": "groovy",
+        "iostream": "cpp"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.exe": {"when": "$(basename).cpp"}
+    }
+}
