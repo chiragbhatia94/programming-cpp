@@ -2,7 +2,9 @@
     "workbench.colorCustomizations": {},
     "files.associations": {
         "Jenkinsfile": "groovy",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "limits": "cpp",
+        "ostream": "cpp"
     },
     "files.exclude": {
         "**/.git": true,
