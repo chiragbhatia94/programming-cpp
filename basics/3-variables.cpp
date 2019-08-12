@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int main(int argc, char **argv)
 {
     int test;
     cout << "test: " << test << endl; // strangely enough this value is 0, while a similar variable defined in the middle of the main method has random value
@@ -16,7 +16,17 @@ int main()
     cout << "result: " << result << endl; // here result will have junk value
     a = a + b;
     result = a - c;
-    cout << result;
+    cout << result << endl;
 
+    // Automatically assigning type
+    auto testing = true;
+
+    // create varible from type of another variable
+    decltype(testing) test2;
+    test2 = argc > 1;
+
+    if (!test2) {
+        cout << "No arguments were provided to the program";
+    }
     return 0;
 }

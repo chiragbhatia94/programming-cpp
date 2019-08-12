@@ -4,7 +4,12 @@
         "Jenkinsfile": "groovy",
         "iostream": "cpp",
         "limits": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "cstdlib": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp"
     },
     "files.exclude": {
         "**/.git": true,
