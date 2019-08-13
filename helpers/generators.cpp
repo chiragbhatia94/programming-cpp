@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <ctime>
 
 using namespace std;
 
@@ -33,4 +34,15 @@ void printMultipleTimes(string x, int times)
         cout << x;
         times--;
     }
+}
+
+vector<int> generateRandomIntegerVector(int count, int min, int max)
+{
+    vector<int> randomNumbers;
+    srand(time(NULL));
+    for (int i = 0; i < count; i++)
+    {
+        randomNumbers.push_back(min + (rand() % (max + 1 - min)));
+    }
+    return randomNumbers;
 }
