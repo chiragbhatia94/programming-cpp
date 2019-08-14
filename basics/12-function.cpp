@@ -9,6 +9,7 @@ using namespace std;
 
 // FUNCTION DECLARATION
 double addNumbers(double num1, double num2);
+int addN(int a, int n);
 // END FUNCTION DECLARATION
 
 int main()
@@ -22,6 +23,9 @@ int main()
     cout << endl
          << fib(8) << endl;
 
+    function<int(int)> add2 = bind(addN, placeholders::_1, 2);
+
+    cout << "5 + 2 = " << add2(5);
     return 0;
 }
 
@@ -29,5 +33,10 @@ int main()
 double addNumbers(double num1, double num2)
 {
     return num1 + num2;
+}
+
+int addN(int a, int n)
+{
+    return a + n;
 }
 // END FUNCTIONS
