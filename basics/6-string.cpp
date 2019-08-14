@@ -70,5 +70,7 @@ int main(int argc, char **argv)
     transform(str.begin(), str.end(), str.begin(), ::tolower);
     cout << "Lower: " << str << "\n";
 
+    string javaStyleString = "Java Style String";
+    cout << javaStyleString << endl;
     return 0;
 }
