@@ -137,6 +137,20 @@ void Dog::ToString()
     cout << this->GetName() << " is " << this->GetHeight() << " cms tall, " << this->GetWeight() << " kgs in weight and says " << this->sound << "\n";
 }
 
+class Base
+{
+public:
+    int x;
+};
+
+class Derived : Base
+{
+}; // is equilalent to class Derived : private Base {}
+
+class PublicallyDerived : public Base
+{
+}; // is equilalent to class Derived : private Base {}
+
 int main()
 {
     // Create object without setting values in constructor
@@ -164,6 +178,11 @@ int main()
     // Call static methods by using the class name to
     // show the total Animals created
     cout << "Number of Animals " << Animal::GetNumOfAnimals() << "\n";
+
+    Derived d;
+    // d.x = 20; // compiler error becuase inheritance is private
+    PublicallyDerived pd;
+    cout << "Hello world" << pd.x << endl;
 
     return 0;
 }

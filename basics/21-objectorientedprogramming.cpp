@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+//  by default classes have private fields
 class Animal
 {
 private:
