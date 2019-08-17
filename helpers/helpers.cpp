@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <ctime>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -45,4 +42,12 @@ vector<int> generateRandomIntegerVector(int count, int min, int max)
         randomNumbers.push_back(min + (rand() % (max + 1 - min)));
     }
     return randomNumbers;
+}
+
+string getTime()
+{
+    using namespace chrono;
+    time_point<system_clock> now = system_clock::now();
+    time_t time = system_clock::to_time_t(now);
+    return ctime(&time);
 }

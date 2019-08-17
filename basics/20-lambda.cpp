@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "../helpers/generators.cpp"
+#include "../helpers/helpers.cpp"
 using namespace std;
 
 int main()
