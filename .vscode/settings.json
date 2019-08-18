@@ -80,6 +80,7 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
+    "**/*?.exe": { "when": "$(basename).c" },
     "**/*.exe": { "when": "$(basename).cpp" }
   },
   "code-runner.runInTerminal": true,
