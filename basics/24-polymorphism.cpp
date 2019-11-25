@@ -31,7 +31,7 @@ class Circle : public Shape
 public:
     Circle(double w) : Shape(w) {}
 
-    // the below function needs to be overridden as it was defined virtal in base class
+    // the below function needs to be overridden as it was defined virtual in base class
     double getArea()
     {
         return 3.14159 * pow(width / 2, 2);

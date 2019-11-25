@@ -3,6 +3,14 @@
 #include <iostream>
 using namespace std;
 
+// A global variable is declared outside of all functions
+// and it can be accessed any place in your code
+int imGlobal = 0;
+
+// Use const to declare a variable constant thats value
+// cannot be changed
+const double PI = 3.141;
+
 int main(int argc, char **argv)
 {
     int test;
@@ -12,7 +20,7 @@ int main(int argc, char **argv)
     int b(3);   // initial value: 3
     int c{2};   // initial value: 2
     int result; // only declaration of variable here initial value is undetermined
-        
+
     cout << "result: " << result << endl; // here result will have junk value
     a = a + b;
     result = a - c;
@@ -25,7 +33,8 @@ int main(int argc, char **argv)
     decltype(testing) test2;
     test2 = argc > 1;
 
-    if (!test2) {
+    if (!test2)
+    {
         cout << "No arguments were provided to the program";
     }
     return 0;

@@ -20,9 +20,10 @@ int main(int argc, char **argv)
     // cout << "n1 + n2 = " << add << endl;
 
     char cString[] = {'A', ' ', 'S', 't', 'r', 'i', 'n', 'g', '\0'};
-    cout << sizeof(cString) << endl;
+    cout << "Array Size: " << sizeof(cString) << endl;
 
     vector<string> stringVec(10);
+    cout << "Vector Size: " << sizeof(stringVec) << endl;
     string str("I'm a string");
     stringVec[0] = str;
 
@@ -57,7 +58,9 @@ int main(int argc, char **argv)
     cout << "----------------------------------------------\n";
 
     if (str.find("string") != string::npos)
+    {
         cout << "first index: " << str.find("string") << "\n";
+    }
     cout << "Substr " << str.substr(6, 6) << "\n";
     string temp(str.erase(20, 8));
     reverse(str.begin(), str.end());

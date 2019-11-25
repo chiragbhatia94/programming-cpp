@@ -13,7 +13,13 @@ private:
 
 public:
     // Constructors
-    Animal();
+    Animal()
+    {
+        this->name = "";
+        this->height = 0;
+        this->weight = 0;
+        Animal::noOfAnimals++;
+    }
     Animal(string, double, double);
 
     // Destructor
@@ -58,13 +64,6 @@ public:
 };
 
 int Animal::noOfAnimals = 0;
-Animal::Animal()
-{
-    this->name = "";
-    this->height = 0;
-    this->weight = 0;
-    Animal::noOfAnimals++;
-}
 Animal::Animal(string name, double height, double weight)
 {
     this->name = name;
@@ -153,7 +152,7 @@ int main()
     Dog spot;
     spot.toString();
     // below line throws compilation error due to undefined reference
-    // this means that if class is defiend but it has undefied members still we should be able to use this class
+    // this means that if class is defiend but it has undefined members still we should be able to use this class
     // spot.undefinedMethod()
     return 0;
 }

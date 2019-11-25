@@ -3,17 +3,18 @@
 
 using namespace std;
 
-int main() {
-    string sMiles;
-    cout << "Enter the number of miles: ";
-    
-    cin >> sMiles;
+int main()
+{
+  string sMiles;
+  cout << "Enter the number of miles: ";
 
-    double dMiles = stod(sMiles);
+  cin >> sMiles;
 
-    double dKm = dMiles * 1.60934;
+  double dMiles = stod(sMiles);
 
-    cout << sMiles << " miles = " << dKm << " Kilometers." << endl;
+  double dKm = dMiles * 1.60934;
 
-    return 0;
+  cout << sMiles << " miles = " << dKm << " Kilometers." << endl;
+
+  return 0;
 }

@@ -5,7 +5,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
     string sSentence = "This is a random string";
     vector<string> vecWords;
     stringstream ss(sSentence);
@@ -13,7 +14,8 @@ int main() {
     string individualString;
     char cSpace = ' ';
 
-    while(getline(ss, individualString, cSpace)) {
+    while (getline(ss, individualString, cSpace))
+    {
         vecWords.push_back(individualString);
     }
 
@@ -21,6 +23,6 @@ int main() {
     {
         cout << vecWords[i] << endl;
     }
-    
+
     return 0;
 }
