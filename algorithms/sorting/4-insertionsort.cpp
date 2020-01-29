@@ -1,17 +1,14 @@
 #include "../../helpers/helpers.cpp"
 using namespace std;
 
-#include "./2-bubblesort.cpp"
-#include "./3-selectionsort.cpp"
-#include "./4-insertionsort.cpp"
 #ifndef MAIN
 #define MAIN
-
+vector<int> insertionSort(vector<int>);
 int main(int argc, char **argv)
 {
   vector<int> list = generateRandomIntegerVector(10, 5, 50);
   // vector<int> list = {0, 3, 2, 1, 5};
-  vector<int> sortedList = selectionSort(list);
+  vector<int> sortedList = insertionSort(list);
 
   cout << "Original list: ";
   printVector(list);
@@ -20,3 +17,9 @@ int main(int argc, char **argv)
   return 0;
 }
 #endif // !MAIN
+
+vector<int> insertionSort(vector<int> list)
+{
+
+  return list;
+}

@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
-
+#ifndef HELPERS
+#define HELPERS
 using namespace std;
 
 vector<int> generateRange(int start, int end, int step)
@@ -51,3 +52,5 @@ string getTime()
     time_t time = system_clock::to_time_t(now);
     return ctime(&time);
 }
+
+#endif // !HELPERS
