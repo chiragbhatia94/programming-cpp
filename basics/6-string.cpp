@@ -35,7 +35,7 @@ int main(int argc, char **argv)
     string str3(str, 4);
 
     stringVec[2] = str3;
-    stringVec.push_back(str3);
+    stringVec.push_back(str3); // goes to the 11th i.e. 10 index location
     string str4(str, 4, 5);
 
     stringVec[3] = str4;

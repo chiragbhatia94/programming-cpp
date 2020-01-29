@@ -1,13 +1,13 @@
-// initialization of variables
+// variables
 
 #include <iostream>
 using namespace std;
 
 // A global variable is declared outside of all functions
-// and it can be accessed any place in your code
+// and it can be accessed from any place in your code
 int imGlobal = 0;
 
-// Use const to declare a variable constant thats value
+// Use const to declare a variable constant whose value
 // cannot be changed
 const double PI = 3.141;
 
@@ -29,7 +29,7 @@ int main(int argc, char **argv)
     // Automatically assigning type
     auto testing = true;
 
-    // create varible from type of another variable
+    // create variable from type of another variable
     decltype(testing) test2;
     test2 = argc > 1;
 

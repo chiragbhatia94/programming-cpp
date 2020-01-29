@@ -17,9 +17,9 @@ int main()
     int arrNums2[] = {1, 2, 3};
     cout << "Print array pointer: " << arrNums << endl;
     int size = sizeof(arrNums) / sizeof(arrNums[0]);
+    cout << "sizeof(arrNums) / sizeof(arrNums[0]): " << size << endl;
     for (auto i = 0; i < size; i++)
     {
-
         cout << arrNums[i] << " ";
     }
 
