@@ -92,5 +92,6 @@
   "editor.formatOnSave": true,
   "cSpell.words": [
     "wooof"
-  ]
+  ],
+  "C_Cpp.dimInactiveRegions": false
 }

@@ -3,8 +3,10 @@ using namespace std;
 
 #ifndef MAIN
 #define MAIN
+
 vector<int> bubbleSort(vector<int>);
 vector<int> bubbleSortInReverse(vector<int>);
+
 int main(int argc, char **argv)
 {
     vector<int> list = generateRandomIntegerVector(10, 5, 50);

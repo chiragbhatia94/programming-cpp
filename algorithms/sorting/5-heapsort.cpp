@@ -1,14 +1,9 @@
 #include "../../helpers/helpers.cpp"
 using namespace std;
 
-#include "./2-bubblesort.cpp"
-#include "./3-selectionsort.cpp"
-#include "./4-insertionsort.cpp"
-#include "./5-heapsort.cpp"
-
 #ifndef MAIN
 #define MAIN
-
+vector<int> heapSort(vector<int>);
 int main(int argc, char **argv)
 {
   vector<int> list = generateRandomIntegerVector(10, 5, 50);
@@ -22,3 +17,8 @@ int main(int argc, char **argv)
   return 0;
 }
 #endif // !MAIN
+
+vector<int> heapSort(vector<int> list)
+{
+  return list;
+}
