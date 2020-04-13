@@ -93,5 +93,6 @@
   "cSpell.words": [
     "wooof"
   ],
-  "C_Cpp.dimInactiveRegions": false
+  "C_Cpp.dimInactiveRegions": false,
+  "code-runner.ignoreSelection": true
 }
