@@ -1,0 +1,30 @@
+{
+  "code-runner.executorMap": {
+    "c": "mkdir -p $workspaceRoot/bin && gcc -std=c90 -Iinclude -Llib $dir/$fileName -o $workspaceRoot/bin/$fileNameWithoutExt.o && $workspaceRoot/bin/$fileNameWithoutExt.o",
+    "cpp": "mkdir -p $workspaceRoot/bin && g++ -Wall -Wextra -std=c++17 -Iinclude -Llib $dir/$fileName -o $workspaceRoot/bin/$fileNameWithoutExt.o && $workspaceRoot/bin/$fileNameWithoutExt.o"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*?.exe": {
+      "when": "$(basename).c"
+    },
+    "**/*.exe": {
+      "when": "$(basename).cpp"
+    },
+    "**/*?.o": {
+      "when": "$(basename).c"
+    },
+    "**/*.o": {
+      "when": "$(basename).cpp"
+    }
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "editor.formatOnSave": true,
+  "C_Cpp.dimInactiveRegions": false,
+  "code-runner.ignoreSelection": true
+}
