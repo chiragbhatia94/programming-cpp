@@ -1,98 +1,30 @@
 {
-  "workbench.colorCustomizations": {},
-  "files.associations": {
-    "Jenkinsfile": "groovy",
-    "iostream": "cpp",
-    "limits": "cpp",
-    "ostream": "cpp",
-    "cstdlib": "cpp",
-    "array": "cpp",
-    "string_view": "cpp",
-    "initializer_list": "cpp",
-    "utility": "cpp",
-    "atomic": "cpp",
-    "*.tcc": "cpp",
-    "cctype": "cpp",
-    "chrono": "cpp",
-    "clocale": "cpp",
-    "cmath": "cpp",
-    "condition_variable": "cpp",
-    "cstdarg": "cpp",
-    "cstddef": "cpp",
-    "cstdint": "cpp",
-    "cstdio": "cpp",
-    "ctime": "cpp",
-    "cwchar": "cpp",
-    "cwctype": "cpp",
-    "deque": "cpp",
-    "unordered_map": "cpp",
-    "vector": "cpp",
-    "exception": "cpp",
-    "algorithm": "cpp",
-    "functional": "cpp",
-    "iterator": "cpp",
-    "memory": "cpp",
-    "memory_resource": "cpp",
-    "numeric": "cpp",
-    "optional": "cpp",
-    "string": "cpp",
-    "system_error": "cpp",
-    "tuple": "cpp",
-    "type_traits": "cpp",
-    "fstream": "cpp",
-    "iosfwd": "cpp",
-    "istream": "cpp",
-    "mutex": "cpp",
-    "new": "cpp",
-    "ratio": "cpp",
-    "sstream": "cpp",
-    "stdexcept": "cpp",
-    "streambuf": "cpp",
-    "thread": "cpp",
-    "typeinfo": "cpp",
-    "map": "cpp",
-    "bitset": "cpp",
-    "cfenv": "cpp",
-    "charconv": "cpp",
-    "cinttypes": "cpp",
-    "codecvt": "cpp",
-    "complex": "cpp",
-    "csetjmp": "cpp",
-    "csignal": "cpp",
-    "cstring": "cpp",
-    "cuchar": "cpp",
-    "forward_list": "cpp",
-    "list": "cpp",
-    "unordered_set": "cpp",
-    "random": "cpp",
-    "regex": "cpp",
-    "set": "cpp",
-    "future": "cpp",
-    "iomanip": "cpp",
-    "scoped_allocator": "cpp",
-    "shared_mutex": "cpp",
-    "typeindex": "cpp",
-    "valarray": "cpp"
+  "code-runner.executorMap": {
+    "c": "mkdir -p $workspaceRoot/bin && gcc -std=c90 -Iinclude -Llib $dir/$fileName -o $workspaceRoot/bin/$fileNameWithoutExt.o && $workspaceRoot/bin/$fileNameWithoutExt.o",
+    "cpp": "mkdir -p $workspaceRoot/bin && g++ -Wall -Wextra -std=c++17 -Iinclude -Llib $dir/$fileName -o $workspaceRoot/bin/$fileNameWithoutExt.o && $workspaceRoot/bin/$fileNameWithoutExt.o"
   },
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/*?.exe": {
-      "when": "$(basename).c"
-    },
-    "**/*.exe": {
-      "when": "$(basename).cpp"
-    }
+    "**/.DS_Store": true
+    // "**/*?.exe": {
+    //   "when": "$(basename).c"
+    // },
+    // "**/*.exe": {
+    //   "when": "$(basename).cpp"
+    // },
+    // "**/*?.o": {
+    //   "when": "$(basename).c"
+    // },
+    // "**/*.o": {
+    //   "when": "$(basename).cpp"
+    // }
   },
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
   "editor.formatOnSave": true,
-  "cSpell.words": [
-    "wooof"
-  ],
   "C_Cpp.dimInactiveRegions": false,
   "code-runner.ignoreSelection": true
 }
